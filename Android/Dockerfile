@@ -1,4 +1,7 @@
 FROM ubuntu:14.04
+
+MAINTAINER Felka Chang <felka_chang@htc.com>
+
 RUN dpkg --add-architecture i386 && apt-get -y update && apt-get install -y openjdk-7-jdk \
     Python findbugs daemon ssh davfs2 libneon27 ant \
     maven ntp ntpdate gawk groovy gradle imagemagick \
